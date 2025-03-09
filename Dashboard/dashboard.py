@@ -6,12 +6,12 @@ import seaborn as sns
 # Load data
 @st.cache_data
 def load_data():
-    customers_df = pd.read_csv("../Data/customers_dataset.csv")
-    sellers_df = pd.read_csv("../Data/sellers_dataset.csv")
-    orders_df = pd.read_csv("../Data/orders_dataset.csv")
-    order_items_df = pd.read_csv("../Data/order_items_dataset.csv")
-    products_df = pd.read_csv("../Data/products_dataset.csv")
-    product_category_df = pd.read_csv("../Data/product_category_name_translation.csv")  
+    customers_df = pd.read_csv("/Data/customers_dataset.csv")
+    sellers_df = pd.read_csv("/Data/sellers_dataset.csv")
+    orders_df = pd.read_csv("/Data/orders_dataset.csv")
+    order_items_df = pd.read_csv("/Data/order_items_dataset.csv")
+    products_df = pd.read_csv("/Data/products_dataset.csv")
+    product_category_df = pd.read_csv("/Data/product_category_name_translation.csv")  
     return customers_df, sellers_df, orders_df, order_items_df, products_df, product_category_df
 
 customers_df, sellers_df, orders_df, order_items_df, products_df, product_category_df = load_data()
